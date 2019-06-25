@@ -1,0 +1,31 @@
+form{
+  display: flex;
+  flex-direction: column;
+}
+div{
+  padding: 10px;
+}
+label.methods{
+  padding: 2px 8px;
+
+  &:hover{
+    background-color: darkgrey;
+  }
+
+  input[type='radio']:checked + label{
+    background-color:#1f4060;
+    color: #f5f5f5;
+    border: 1px solid grey;
+  }
+  /*input{
+    display: none;
+  } */
+}
+
+
+
+.URL{
+  display: inline-block;
+  color: grey;
+  width: 100%;
+}
