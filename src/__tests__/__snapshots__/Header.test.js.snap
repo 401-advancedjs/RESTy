@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> rendering follows the snapshot 1`] = `
+<header>
+  <h1>
+    RESTy
+  </h1>
+</header>
+`;

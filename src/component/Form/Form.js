@@ -32,27 +32,27 @@ export default class Form extends React.Component{
           <div className="methodsDIV">
           <label className="methods">
             GET
-          <input type="radio" value="GET" onChange={ this.handleMethodChange }></input>
+          <input type="radio" value="GET" className="GET" name="methods" onChange={ this.handleMethodChange }></input>
           </label>
 
           <label className="methods">
             POST
-          <input type="radio" value="POST"  onChange={ this.handleMethodChange }></input>
+          <input type="radio" value="POST" className="POST" name="methods" onChange={ this.handleMethodChange }></input>
           </label>
 
           <label className="methods">
             PUT
-          <input type="radio" value="PUT"  onChange={ this.handleMethodChange }></input>
+          <input type="radio" value="PUT" className="PUT" name="methods" onChange={ this.handleMethodChange }></input>
           </label>
 
           <label className="methods">
             PATCH
-          <input type="radio" value="PATCH"  onChange={ this.handleMethodChange }></input>
+          <input type="radio" value="PATCH" className="PATCH" name="methods" onChange={ this.handleMethodChange }></input>
           </label>
 
           <label className="methods">
             DELETE
-          <input type="radio" value="DELETE"  onChange={ this.handleMethodChange }></input>
+          <input type="radio" value="DELETE" className="DELETE" name="methods" onChange={ this.handleMethodChange }></input>
           </label>
           <button onClick={ this.handleSubmitChange }>Go!</button>
           </div>
