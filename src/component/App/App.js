@@ -1,14 +1,12 @@
 import React from 'react';
-import './App.scss';
-import Header from '../Header/Header.js';
-import Form from '../Form/Form.js';
-import JSONBody from '../JSONBody/JSONBody.js';
 import ReactJSON from 'react-json-view';
-import Footer from '../Footer/footer.js';
-
-
 const superagent = require('superagent');
 
+import Form from '../Form/Form.js';
+import Header from '../Header/Header.js';
+import Footer from '../Footer/footer.js';
+import JSONBody from '../JSONBody/JSONBody.js';
+import './App.scss';
 
 export default class App extends React.Component{
   constructor(props){
@@ -18,14 +16,15 @@ export default class App extends React.Component{
       method: '',
       result: {},
     }
-  }
+  };
+
   handleURL = URL => {
     this.setState({ URL });
-  }
+  };
 
   handleMethod = method => {
     this.setState({ method });
-  }
+  };
 
   handleSubmit = async () => {
     const METHOD = this.state.method;
@@ -33,14 +32,18 @@ export default class App extends React.Component{
     const response = await superagent(METHOD, URL);
     const result = response.body.results;
     this.setState({ result });
-  }
+  };
 
   render(){
     return(
       <>
       <div>
         <Header />
-        <Form handleURL={ this.handleURL } handleMethod={ this.handleMethod } handleSubmit={ this.handleSubmit }/>
+        <Form 
+          handleURL    = { this.handleURL } 
+          handleMethod = { this.handleMethod } 
+          handleSubmit = { this.handleSubmit }
+        />
         <JSONBody />
         <div id="reactJSON">
           <ReactJSON src={ this.state.result } />
