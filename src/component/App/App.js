@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactJSON from 'react-json-view';
-const superagent = require('superagent');
+import superagent from'superagent';
 
 import Form from '../Form/Form.js';
 import Header from '../Header/Header.js';
 import Footer from '../Footer/footer.js';
 import JSONBody from '../JSONBody/JSONBody.js';
+
 import './App.scss';
 
 export default class App extends React.Component{
