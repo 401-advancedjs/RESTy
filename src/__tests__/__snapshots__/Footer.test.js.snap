@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> rendering follows the snapshot 1`] = `
+<p>
+  ©2019 Code Fellows
+</p>
+`;
